@@ -80,7 +80,7 @@ Write a function named removeWithForEach that produces the same output as challe
 
 const removeWithForEach = (arr, callback) => {
   // Solution code here...
-  arr.forEach( function(char, index){
+  arr.forEach( function(char){
     callback(char, arr);
   });
   return arr;
@@ -126,7 +126,7 @@ This function should use forEach to populate your grocery list based on the stor
 const createList = (availableItems) => {
   // Solution code here...
   var list = [];
-  availableItems.forEach( function(char, index){
+  availableItems.forEach( function(char){
     if(char.available === true){
       list.push(char.name);
     }
