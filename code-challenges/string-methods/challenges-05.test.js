@@ -154,9 +154,7 @@ const removeEvenValues = (arr) => {
   let cnt = 0;
   let len = arr.length;
   for(let i = 0; i < len; i++){
-    console.log(i + ' parse: '+ arr);
     if(arr[i-cnt] % 2 === 0){
-      console.log(arr[i-cnt]);
       arr.splice(i-cnt,1);
       cnt++;
     }
