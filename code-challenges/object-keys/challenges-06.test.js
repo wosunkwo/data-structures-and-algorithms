@@ -94,7 +94,7 @@ const hasChildrenValues = (arr, character) => {
   // Solution code here..
   for(let i =0; i<arr.length; i++){
     if(arr[i].name === character){
-      if((arr[i].children).length === 0){
+      if((Object.values(arr)[i].children).length === 0){
         return false;
       }else{
         return true;
