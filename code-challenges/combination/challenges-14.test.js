@@ -1,5 +1,7 @@
 'use strict';
 
+import { arrayExpression } from "@babel/types";
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -108,7 +110,7 @@ This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
 const sortBy = (property, arr) => {
-  
+  return arr.sort((a,b) => (property === 'name')? a.name.localCompare(b.name): a.price - b.price);
 };
 
 /* ------------------------------------------------------------------------------------------------
