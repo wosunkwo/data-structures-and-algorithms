@@ -3,4 +3,4 @@
 This repo contains my practice and adventures in Data Structures and Algorithms for Code401. 
 ## Week 1 | Arrays
 - [Day 1: Array Reverse](/code-challenges/array-reverse/ArrayReverse.java) 
-- [Day 2: Array Shift](/src/test/java/code401/challeneges/ArrayShiftTest.java)
+- [Day 2: Array Shift](/readme/README2.md)
