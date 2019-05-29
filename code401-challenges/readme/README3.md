@@ -13,7 +13,7 @@ I used a divide and conquer approach to solving this challenge. Because since th
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/array_binray_search.jpg)
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/array_binary_search.jpg)
 
 ## Link to Code
 [BinarySearch](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/BinarySearch.java)
