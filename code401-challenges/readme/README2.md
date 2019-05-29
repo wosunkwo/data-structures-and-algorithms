@@ -12,3 +12,4 @@ I used a brute force method for the function, because i couldn't think of a way 
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/code401-challenges/assets/challenege2_img.jpg)
