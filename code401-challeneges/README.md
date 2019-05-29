@@ -1,15 +1,6 @@
-# Challenge Summary
-<!-- Short summary or background information -->
-This code challenge deals with array manipulation. In the main method of the ArrayShift class I am calling two functions. The first function takes in two parameters, an array and a value. It places the value in the middle of the array and returns the new array
-The second function takes in one parameter, an array. It removes the middle element in the array and returns the new array.
 
-## Challenge Description
-<!-- Description of the challenge -->
-This Challenge requires the program to add an element to the middle of an array and print out the new array
-
-## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-I used a brute force method for both functions, because i couldn't think of a way to do it with divide and conquer or reduce and conquer. The Big 0 time complexity is 0(m + n) where m is the size of the new array after adding an element in the middle, and n is the size of the original array.
-
-## Solution
-<!-- Embedded whiteboard image -->
+# Data-Structures-and-Algorithms
+This repo contains my practice and adventures in Data Structures and Algorithms for Code401. 
+## Week 1 | Arrays
+- [Day 1: Array Reverse](/code-challenges/array-reverse/ArrayReverse.java) 
+- [Day 2: Array Shift](/src/test/java/code401/challeneges/ArrayShiftTest.java)
