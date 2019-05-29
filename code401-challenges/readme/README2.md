@@ -12,3 +12,9 @@ I used a brute force method for the function, because i couldn't think of a way 
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/challenege2_img.jpg)
+
+## Link to Code
+[ArrayShift](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/ArrayShift.java)
+## 
+[ArrayShiftTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/ArrayShiftTest.java)
