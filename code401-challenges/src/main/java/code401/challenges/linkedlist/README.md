@@ -18,3 +18,6 @@ print -> 0(n) where n is the size of the linked list
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
+void insert(int value)
+boolean includes(int value)
+int[] print()
