@@ -5,3 +5,6 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 - [Day 1: Array Reverse](../code-challenges/array-reverse/ArrayReverse.java) 
 - [Day 2: Array Shift](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/readme/README2.md)
 - [Day 3: Binary Search](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/readme/README3.md)
+
+## Week 2 | Linked List
+- [Day 1: Linked List Implementation](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/README.md)
