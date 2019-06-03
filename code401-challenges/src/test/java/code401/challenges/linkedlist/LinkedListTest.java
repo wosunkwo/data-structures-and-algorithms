@@ -30,8 +30,7 @@ public class LinkedListTest {
         LinkedList classUnderTest = new LinkedList();
         classUnderTest.insert(1);
         classUnderTest.insert(2);
-        int[] resultArr = classUnderTest.print();
-        assertTrue("This should return true if the first element in the head points to the first value in the linked list ", 2 == resultArr[0] );
+        assertEquals("This should return true if the first element in the head points to the first value in the linked list ", 2, classUnderTest.head.value);
     }
 
     //test to check if the linked list class can insert multiple values
@@ -66,5 +65,89 @@ public class LinkedListTest {
         classUnderTest.insert(2);
         classUnderTest.insert(3);
         assertFalse("This should return false if the linked list does not contains the value we are looking for ", classUnderTest.includes(4));
+    }
+
+    //************************************ Test for Code Challenge 6 ********************
+
+    // Test to see if my append method successfully adds a new value to the end of my linked list
+    @Test
+    public void testForAddAtEndOfList(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.insert(4);
+        classUnderTest.insert(3);
+        classUnderTest.insert(2);
+        classUnderTest.insert(1);
+        classUnderTest.append(5);
+        int [] resultArr = classUnderTest.print();
+        int expectedOutput = 5;
+        assertEquals("This should return true if the value at the end of the linked list is the same as the expected value ", expectedOutput, resultArr[resultArr.length - 1]);
+    }
+
+    //Test to see if my append method successfully adds multiple new values to the end of the linked list
+    @Test
+    public void testForAddMultipleNodesAtEndOfList(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(1);
+        classUnderTest.append(2);
+        classUnderTest.append(3);
+        int[] resultArr = classUnderTest.print();
+        int[] expectedOutput = {1,2,3};
+        assertArrayEquals("This should return true if the array return by the linked list is the same as the expected array that should be returned ", expectedOutput, resultArr);
+    }
+
+    //Test to see if the insertBefore method successfully adds a new value before a specified value at the middle of the linked list
+    @Test
+    public void testForInsertBeforeAtMiddle(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(0);
+        classUnderTest.append(1);
+        classUnderTest.append(3);
+        classUnderTest.append(4);
+        classUnderTest.insertBefore(3,10);
+        int[] resultArr = classUnderTest.print();
+        int expectedOutput = 10;
+        assertEquals("This should return true if the array return by the linked list has the correct value we inserted in it ", expectedOutput, resultArr[2]);
+    }
+
+    //Test to see if the insertBefore method successfully adds a new node before the first node of the linked list
+    @Test
+    public void testForInsertBeforeFirstNode(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(0);
+        classUnderTest.append(1);
+        classUnderTest.append(2);
+        classUnderTest.append(3);
+        classUnderTest.insertBefore(0,10);
+        int[] resultArr = classUnderTest.print();
+        int expectedOutput = 10;
+        assertEquals("This should return true if the array return by the linked list has the value we added to it at the front of the linked list ", expectedOutput, resultArr[0]);
+    }
+
+    //Test to see if the insertAfter method successfully adds a new value after a specified value at the middle of the linked list
+    @Test
+    public void testForInsertAfterAtMiddle(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(0);
+        classUnderTest.append(1);
+        classUnderTest.append(2);
+        classUnderTest.append(3);
+        classUnderTest.insertAfter(2,10);
+        int[] resultArr = classUnderTest.print();
+        int expectedOutput = 10;
+        assertEquals("This should return true if the array return by the linked list has the correct value we inserted in it ", expectedOutput, resultArr[3]);
+    }
+
+    //Test to see if the insertAfter method successfully adds a new node after the last node of the linked list
+    @Test
+    public void testForInsertAfterLastNode(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(0);
+        classUnderTest.append(1);
+        classUnderTest.append(2);
+        classUnderTest.append(3);
+        classUnderTest.insertAfter(3,10);
+        int[] resultArr = classUnderTest.print();
+        int expectedOutput = 10;
+        assertEquals("This should return true if the array return by the linked list has the value we added to it at its last node ", expectedOutput, resultArr[resultArr.length-1]);
     }
 }
