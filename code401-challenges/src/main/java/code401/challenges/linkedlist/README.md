@@ -52,4 +52,5 @@ insertAfter (worst case) -> 0(n) where n is the size of the linked list
 ----------------------------------------------------------------------------------------------------
 ## LINK TO CODE
 [LinkedList](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/LinkedList.java)
-[LinkedList Test](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/linkedlist/LinkedListTest.java)
+-----------------------------------------------------------------------------------------------------
+[LinkedListTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/linkedlist/LinkedListTest.java)
