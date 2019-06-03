@@ -144,18 +144,4 @@ public class LinkedList {
         System.out.println("The linked list does not contain "+ value);
         return -1;
     }
-
-//
-//    public static void main (String[] args){
-//        LinkedList list = new LinkedList();
-//        list.insert(4);
-//        list.insert(3);
-//        list.insert(2);
-//        list.insert(1);
-//        list.append(5);
-//        list.append(6);
-//        list.insertAfter(7, 0);
-//        System.out.println(Arrays.toString(list.print()));
-//    }
-
 }
