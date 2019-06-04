@@ -47,7 +47,7 @@ insertAfter (worst case) -> 0(n) where n is the size of the linked list
 
 ## Solution
 <!-- Embedded whiteboard image -->
-
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/ll_insertions.jpeg)
 
 ----------------------------------------------------------------------------------------------------
  ## LINK TO CODE
