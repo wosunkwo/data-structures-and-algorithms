@@ -80,6 +80,7 @@ O(1)
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/ll_kth_from_end.jpg)
 
 ## LINK TO CODE
  
