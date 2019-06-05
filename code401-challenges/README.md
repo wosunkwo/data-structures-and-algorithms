@@ -9,3 +9,6 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 ## Week 2 | Linked List
 - [Day 1: Linked List Implementation](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/README.md)
 - [Day 1: Linked List Implementation (Code Challenege)](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/README.md)
+
+- [Day 2: Linked List K-nth Value (Code Challenege)]
+(https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/README.md)
