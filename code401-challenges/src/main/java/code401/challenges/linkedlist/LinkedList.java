@@ -122,10 +122,10 @@ public class LinkedList {
     }
 
     //this function adds a new value in front of a specified value
-    public int insertAfter(int value, int newVal){
+    public void insertAfter(int value, int newVal){
         if(this.head == null) {
             System.out.println("Error, the list is empty");
-            return -1;
+            return;
         }else{
             Node current = this.head;
             Node newValue = new Node();
@@ -135,13 +135,51 @@ public class LinkedList {
                     newValue.next = current.next;
                     current.next = newValue;
                     this.size++;
-                    return 0;
+                    return;
                 }else{
                     current = current.next;
                 }
             }
         }
         System.out.println("The linked list does not contain "+ value);
+        return;
+    }
+
+    public int knthFromEnd(int value){
+        if(this.head == null){
+            throw new NullPointerException("The Linked list is empty");
+        }else if(value > this.size){
+            throw new IllegalArgumentException("The value you passed is greater than the size of the linked list. Please try a different value");
+        }else if (value == this.size){
+               throw new IllegalArgumentException("The value you passed is the same as the size of the linked list");
+        }else if(value < 0) {
+            throw new IllegalArgumentException("You passed in a negative value");
+        }else{
+            //the kIndex represents the difference between the size of the linked list and the k index. I.E it represents the index of the value we are going to be returning
+            int kIndex = this.size - value;
+            int listCounter = 1;
+            Node current = this.head;
+
+            while(current != null){
+                if(kIndex == listCounter){
+                    return current.value;
+                }else{
+                    current = current.next;
+                    listCounter++;
+                }
+            }
+        }
         return -1;
+    }
+
+
+    public static void main (String[] args){
+        LinkedList test = new LinkedList();
+        test.append(1);
+        test.append(3);
+        test.append(8);
+        test.append(2);
+
+        System.out.println(test.knthFromEnd(1));
     }
 }
