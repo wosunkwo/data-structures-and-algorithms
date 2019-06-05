@@ -81,3 +81,8 @@ O(1)
 ## Solution
 <!-- Embedded whiteboard image -->
 
+## LINK TO CODE
+ 
+[LinkedList](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/LinkedList.java)
+-----------------------------------------------------------------------------------------------------
+[LinkedListTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/linkedlist/LinkedListTest.java)
