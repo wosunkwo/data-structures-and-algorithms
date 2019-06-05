@@ -150,4 +150,47 @@ public class LinkedListTest {
         int expectedOutput = 10;
         assertEquals("This should return true if the array return by the linked list has the value we added to it at its last node ", expectedOutput, resultArr[resultArr.length-1]);
     }
+
+
+    //******************* Test Cases for K- Nth Value Challenge
+    @Test(expected = IllegalArgumentException.class)
+    public void testForKnthGreaterThan(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(1);
+        classUnderTest.knthFromEnd(2);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testForKnthTheSame(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(1);
+        classUnderTest.knthFromEnd(1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testForKnthNegative(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(1);
+        classUnderTest.knthFromEnd(-1);
+    }
+
+    @Test
+    public void testForKnthSizOnee(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(8);
+        int expectedOutput = 8;
+        assertEquals("This should be true if the expected output is the same as the output the class method returns", expectedOutput, classUnderTest.knthFromEnd(0));
+    }
+
+    @Test
+    public void testForKnthHappyPath(){
+        LinkedList classUnderTest = new LinkedList();
+        classUnderTest.append(1);
+        classUnderTest.append(3);
+        classUnderTest.append(8);
+        classUnderTest.append(2);
+        int expectedOutput = 3;
+        assertEquals("This should be true if the expected output is the same as the output the class method returns", expectedOutput, classUnderTest.knthFromEnd(2));
+    }
+
 }
