@@ -55,3 +55,29 @@ insertAfter (worst case) -> 0(n) where n is the size of the linked list
 [LinkedList](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/LinkedList.java)
 -----------------------------------------------------------------------------------------------------
 [LinkedListTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/linkedlist/LinkedListTest.java)
+
+------------------------------------------------------------------------------------------------------
+CODE CHALLENGE 7
+
+# Challenge Summary
+<!-- Short summary or background information -->
+This added a new method to my linked list class called knthFromEnd, that goes through the linked list and returns the kth value from the end of the linked list
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. 
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I took a more efficient approach. I kept track of the size of my linked list in an instance variable, and to get the kth index value from the end of the list, I subtracted k from the size of the linked list. I then transvered through my list until i got to that index, then i returned that index value
+
+Time
+O(n-k) worst case: where n represents the size of the linked list, and is the kth value
+O(1) best case: if the value we are looking for is the first node in our list
+
+Space
+O(1)
+
+## Solution
+<!-- Embedded whiteboard image -->
+
