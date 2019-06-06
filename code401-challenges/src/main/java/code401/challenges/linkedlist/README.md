@@ -87,3 +87,31 @@ O(1)
 [LinkedList](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/LinkedList.java)
 -----------------------------------------------------------------------------------------------------
 [LinkedListTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/linkedlist/LinkedListTest.java)
+
+-------------------------------------------------------------------------------------------------------
+CODE CHALLENEGE 8
+# Challenge Summary
+<!-- Short summary or background information -->
+This new feature implements a merge list method that adds two linked list together and saves them in a new linkedlist and returns the head of the new linked list
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I took a brute force approach. I created a new linkedlist instance and transversed through the two initial linkedlist, appending the initial linkedlist values to this new linkedlist.
+Space Complexity
+O(n + m) - Where n is the size of first linked list, and m is the size of the second linked list
+
+Time Complexoty
+O(n) - Where n is the size of the largest linked list out of the two that get passed
+
+## Solution
+<!-- Embedded whiteboard image -->
+## LINK TO CODE
+ 
+[LinkedList](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/LinkedList.java)
+-----------------------------------------------------------------------------------------------------
+[LinkedListTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/linkedlist/LinkedListTest.java)
+
