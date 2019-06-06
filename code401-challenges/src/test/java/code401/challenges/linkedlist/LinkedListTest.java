@@ -1,10 +1,10 @@
 package code401.challenges.linkedlist;
 
-import code401.challenges.Library;
 import org.junit.Test;
-
 import java.util.ArrayList;
 
+
+import static code401.challenges.linkedlist.LinkedList.mergeLists;
 import static org.junit.Assert.*;
 
 public class LinkedListTest {
@@ -192,5 +192,73 @@ public class LinkedListTest {
         int expectedOutput = 3;
         assertEquals("This should be true if the expected output is the same as the output the class method returns", expectedOutput, classUnderTest.knthFromEnd(2));
     }
+
+    //******************************************* Test cases for the Merge list method *******************************************
+    @Test
+    public void testForMergeListHappy(){
+        LinkedList one = new LinkedList();
+        one.append(1);
+        one.append(2);
+        one.append(3);
+        one.append(4);
+
+        LinkedList two = new LinkedList();
+        two.append(5);
+        two.append(6);
+        two.append(7);
+
+        Node newHead = mergeLists(one, two);
+
+        ArrayList <Integer> resultArr = new ArrayList<>();
+        Node current = newHead;
+        while (current != null) {
+            resultArr.add(current.value);
+            current = current.next;
+        }
+
+        Object [] expectedOutput = {1,5,2,6,3,7,4};
+
+        assertArrayEquals("This should be true if the expected output is the same as the output the class method returns", expectedOutput, resultArr.toArray());
+    }
+
+    @Test
+    public void testForMergeListEmpty(){
+        LinkedList one = new LinkedList();
+        LinkedList two = new LinkedList();
+        two.append(5);
+        two.append(6);
+        two.append(7);
+
+        Node newHead = mergeLists(one, two);
+
+        ArrayList <Integer> resultArr = new ArrayList<>();
+        Node current = newHead;
+        while (current != null) {
+            resultArr.add(current.value);
+            current = current.next;
+        }
+        Object [] expectedOutput = {5,6,7};
+
+        assertArrayEquals("This should be true if the expected output is the same as the output the class method returns", expectedOutput, resultArr.toArray());
+    }
+
+    @Test
+    public void testForMergeListOneEmpty(){
+        LinkedList one = new LinkedList();
+        LinkedList two = new LinkedList();
+
+        Node newHead = mergeLists(one, two);
+
+        ArrayList <Integer> resultArr = new ArrayList<>();
+        Node current = newHead;
+        while (current != null) {
+            resultArr.add(current.value);
+            current = current.next;
+        }
+        Object [] expectedOutput = {};
+
+        assertArrayEquals("This should be true if the expected output is the same as the output the class method returns", expectedOutput, resultArr.toArray());
+    }
+
 
 }
