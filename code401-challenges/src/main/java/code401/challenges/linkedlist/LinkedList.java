@@ -1,8 +1,5 @@
 package code401.challenges.linkedlist;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class LinkedList {
     Node head;
     int size; //stores the size of the linked list
@@ -172,14 +169,30 @@ public class LinkedList {
         return -1;
     }
 
-
-    public static void main (String[] args){
-        LinkedList test = new LinkedList();
-        test.append(1);
-        test.append(3);
-        test.append(8);
-        test.append(2);
-
-        System.out.println(test.knthFromEnd(1));
+    public static Node mergeLists(LinkedList one, LinkedList two){
+        if(one.head == null){
+            return two.head;
+        }else if(two.head == null){
+            return one.head;
+        }else{
+            Node oneCurrent = one.head;
+            Node twoCurrent = two.head;
+            LinkedList mergedList = new LinkedList();
+            while(oneCurrent != null || twoCurrent != null){
+                if(oneCurrent == null){
+                    mergedList.append(twoCurrent.value);
+                    twoCurrent = twoCurrent.next;
+                }else if(twoCurrent == null){
+                    mergedList.append(oneCurrent.value);
+                    oneCurrent = oneCurrent.next;
+                }else{
+                    mergedList.append(oneCurrent.value);
+                    mergedList.append(twoCurrent.value);
+                    oneCurrent = oneCurrent.next;
+                    twoCurrent = twoCurrent.next;
+                }
+            }
+            return mergedList.head;
+        }
     }
 }
