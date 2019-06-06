@@ -109,6 +109,7 @@ O(n) - Where n is the size of the largest linked list out of the two that get pa
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/ll_merge.jpg)
 ## LINK TO CODE
  
 [LinkedList](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/linkedlist/LinkedList.java)
