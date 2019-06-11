@@ -37,15 +37,4 @@ public class PseudoQueue {
             return null;
         }
     }
-
-    public static void main(String[] args){
-        PseudoQueue temp = new PseudoQueue();
-        temp.enqueue(10);
-        temp.enqueue(20);
-        temp.enqueue(30);
-        temp.dequeue();
-        System.out.println(temp.dequeue());
-        System.out.println(temp.dequeue());
-    }
-
 }
