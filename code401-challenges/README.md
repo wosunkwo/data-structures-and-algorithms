@@ -14,3 +14,4 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 
 ## Week 3 | Stacks and Queues
 - [Day 1: Stack and Queue Implementation](https://github.com/wosunkwo/data-structures-and-algorithms/tree/master/code401-challenges/src/main/java/code401/challenges/stacksandqueues/README.md)
+- [Day 1: Queue with Stack Implementation] (https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/queueWithStacks/README.md)
