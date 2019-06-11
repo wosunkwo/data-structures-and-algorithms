@@ -5,6 +5,10 @@ import code401.challenges.linkedlist.Node;
 public class Stack {
     Node top;
 
+    public Node getTop() {
+        return top;
+    }
+
     public Stack(){
         this.top = null;
     }
