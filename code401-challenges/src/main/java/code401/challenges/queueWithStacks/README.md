@@ -16,3 +16,8 @@ I took a single responsibility approach, where each of my methods served only on
 ## Solution
 <!-- Embedded whiteboard image -->
 
+## LINK TO CODE
+ 
+[PseudoQueue](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/queueWithStacks/PseudoQueue.java)
+-----------------------------------------------------------------------------------------------------
+[PseudoQueueTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/queueWithStacks/PseudoQueueTest.java)
