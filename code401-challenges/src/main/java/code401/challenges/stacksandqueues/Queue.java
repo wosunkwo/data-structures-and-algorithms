@@ -2,6 +2,8 @@ package code401.challenges.stacksandqueues;
 
 import code401.challenges.linkedlist.Node;
 
+import java.util.EmptyStackException;
+
 public class Queue {
     Node front;
     Node back;
@@ -50,11 +52,12 @@ public class Queue {
         try{
             return front.getValue();
 
-        }catch(Exception e){
+        }catch(NullPointerException e){
             System.out.println("The queue is empty. Nothing to peek");
             System.out.println(e);
             return null;
         }
     }
+    
 
 }
