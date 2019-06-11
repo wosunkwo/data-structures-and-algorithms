@@ -15,6 +15,7 @@ I took a single responsibility approach, where each of my methods served only on
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/queue_with_stacks.jpg)
 
 ## LINK TO CODE
  
