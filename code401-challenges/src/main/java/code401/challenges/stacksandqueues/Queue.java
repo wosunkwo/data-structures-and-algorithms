@@ -58,14 +58,6 @@ public class Queue {
             return null;
         }
     }
-
-    public static void main(String[] args){
-        Queue temp = new Queue();
-        temp.enqueue(10);
-        temp.enqueue(15);
-        temp.dequeue();
-        temp.dequeue();
-        System.out.println(temp.back.getValue());
-    }
+    
 
 }
