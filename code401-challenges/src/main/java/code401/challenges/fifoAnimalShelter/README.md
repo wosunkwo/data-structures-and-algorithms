@@ -23,3 +23,8 @@ Dequeue Space: 0(n)
 ## Solution
 <!-- Embedded whiteboard image -->
 
+## LINK TO CODE
+ 
+[AnimalShelter](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/fifoAnimalShelter/AnimalShelter.java)
+-----------------------------------------------------------------------------------------------------
+[AnimalShelterTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/fifoAnimalShelter/AnimalShelterTest.java)
