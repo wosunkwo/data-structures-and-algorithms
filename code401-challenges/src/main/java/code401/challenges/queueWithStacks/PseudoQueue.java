@@ -2,7 +2,7 @@ package code401.challenges.queueWithStacks;
 
 import code401.challenges.stacksandqueues.Stack;
 
-public class PseudoQueue {
+public class PseudoQueue <T>{
     Stack mainStack;
     Stack tempStack;
 
@@ -12,7 +12,7 @@ public class PseudoQueue {
     }
 
     //method to add a new value to the back queue
-    public void enqueue(int value){
+    public void enqueue(T value){
         if(mainStack.getTop() == null){
             mainStack.push(value);
         }else{
@@ -27,9 +27,9 @@ public class PseudoQueue {
     }
 
     //method to remove a value from the front of the queue
-    public Integer dequeue(){
+    public T dequeue(){
         try{
-           Integer value = mainStack.pop();
+           T value = (T) mainStack.pop();
            return value;
         }catch(NullPointerException e){
             System.out.println("The queue is empty. There is nothing to remove");
