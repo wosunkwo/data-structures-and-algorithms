@@ -1,8 +1,7 @@
 package code401.challenges.stacksandqueues;
 
-import code401.challenges.linkedlist.Node;
 
-public class Stack {
+public class Stack <T>{
     Node top;
 
     public Node getTop() {
@@ -14,7 +13,7 @@ public class Stack {
     }
 
     //method to add a new node to the top of the stack
-    public void push(int value){
+    public void push(T value){
         Node current = new Node();
         current.setValue(value);
         if(top == null){
@@ -27,15 +26,15 @@ public class Stack {
     }
 
     //method to remove a node from the top of the stack
-    public Integer pop(){
+    public T pop(){
         try{
-            int value;
+            T value;
             if(top.getNext() == null){
-                value = top.getValue();
+                value = (T) top.getValue();
                 top = null;
                 return value;
             }else{
-                value = top.getValue();
+                value = (T) top.getValue();
                 Node temp = top.getNext();
                 top.setNext(null);
                 top = temp;
@@ -49,14 +48,13 @@ public class Stack {
     }
 
     //method to view the value at the top of the stack without removing that value
-    public Integer peek(){
+    public T peek(){
         try{
-            return top.getValue();
+            return (T) top.getValue();
         }catch(NullPointerException e){
             System.out.println("The stack is empty. No value to peek");
             System.out.println(e);
             return null;
         }
     }
-
 }

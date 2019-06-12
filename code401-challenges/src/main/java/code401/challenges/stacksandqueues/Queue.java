@@ -1,10 +1,7 @@
 package code401.challenges.stacksandqueues;
 
-import code401.challenges.linkedlist.Node;
 
-import java.util.EmptyStackException;
-
-public class Queue {
+public class Queue <T> {
     Node front;
     Node back;
 
@@ -14,8 +11,8 @@ public class Queue {
     }
 
     //method to add a new node to the back of the queue
-    public void enqueue(int value){
-        Node current = new Node();
+    public void enqueue(T value){
+        Node <T> current = new <T> Node();
         current.setValue(value);
         if(front == null){
             back = current;
@@ -32,9 +29,9 @@ public class Queue {
     }
 
     //method to remove a node from the front of the queue
-    public Integer dequeue(){
+    public T dequeue(){
         try{
-            Integer tempValue = front.getValue();
+            T tempValue = (T) front.getValue();
             Node tempNext = front.getNext();
             front.setNext(null);
             front = tempNext;
@@ -48,9 +45,9 @@ public class Queue {
     }
 
 //method to view the node at the front of the queue
-    public Integer peek(){
+    public T peek(){
         try{
-            return front.getValue();
+            return (T) front.getValue();
 
         }catch(NullPointerException e){
             System.out.println("The queue is empty. Nothing to peek");
@@ -58,6 +55,4 @@ public class Queue {
             return null;
         }
     }
-    
-
 }
