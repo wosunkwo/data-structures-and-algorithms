@@ -22,6 +22,7 @@ Dequeue Space: 0(n)
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/fifo_animal_shelter.jpg)
 
 ## LINK TO CODE
  
