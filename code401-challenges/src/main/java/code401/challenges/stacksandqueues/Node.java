@@ -3,10 +3,12 @@ package code401.challenges.stacksandqueues;
 public class Node <T> {
     T value;
     Node next;
+    int timeStamp;
 
     public Node (){
         this.value = null;
         this.next = null;
+        timeStamp = 0;
     }
 
     public T getValue() {
@@ -23,5 +25,13 @@ public class Node <T> {
 
     public void setNext(Node next) {
         this.next = next;
+    }
+
+    public int getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(int timeStamp) {
+        this.timeStamp = timeStamp;
     }
 }
