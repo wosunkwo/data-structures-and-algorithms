@@ -20,6 +20,7 @@ Big 0 Time: 0(n) where n represents the size of the string
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/multi_bracket_validation.jpg)
 
  ## LINK TO CODE
  
