@@ -2,10 +2,6 @@ package code401.challenges.multibracketvalidation;
 
 public class MultiBracketValidation {
 
-    public static void main(String[] args){
-        System.out.println(multiBracketValidation("{(})"));
-    }
-
     public static boolean multiBracketValidation(String input){
         //an array of size 3 that will represent the number of each type of bracket the string contains
         //index 0 represents "(" and ")", index 1 represents "[" and "]",index 2 represents "{" and "}"
