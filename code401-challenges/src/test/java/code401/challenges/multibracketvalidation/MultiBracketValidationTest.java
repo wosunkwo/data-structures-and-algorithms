@@ -14,7 +14,7 @@ public class MultiBracketValidationTest {
 
     @Test
     public void testHappyPath(){
-        assertTrue("This should return true if the method returns false", classUnderTest.multiBracketValidation("(text())"));
+        assertTrue("This should return true if the method returns false", classUnderTest.multiBracketValidation("{}{Code}[Fellows](())"));
     }
 
     @Test
@@ -24,6 +24,6 @@ public class MultiBracketValidationTest {
 
     @Test
     public void testEdgePath(){
-        assertTrue("This should return true if the method returns true", classUnderTest.multiBracketValidation("{}{Code}[Fellows](())"));
+        assertTrue("This should return true if the method returns true", classUnderTest.multiBracketValidation("{(})"));
     }
 }
