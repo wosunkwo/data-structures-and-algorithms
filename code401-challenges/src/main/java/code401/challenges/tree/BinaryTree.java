@@ -1,8 +1,5 @@
 package code401.challenges.tree;
 
-
-import code401.challenges.BinarySearch;
-
 import java.util.ArrayList;
 
 public class BinaryTree<T> {
@@ -89,25 +86,7 @@ public class BinaryTree<T> {
             System.out.println(e);
         }
     }
-
-    public static void main (String[] args){
-        BinaryTree<Integer> tree = new BinaryTree<>();
-        Node<Integer> root = new Node<>(1);
-        Node<Integer> treeL = new Node<>(2);
-        Node<Integer> treeR = new Node<>(5);
-        Node<Integer> treeLL = new Node<>(3);
-        Node<Integer> treeLR = new Node<>(4);
-        Node<Integer> treeRR = new Node<>(6);
-
-        treeL.setLeft(treeLL);
-        treeL.setRight(treeLR);
-        treeR.setRight(treeRR);
-        root.setRight(treeR);
-        root.setLeft(treeL);
-
-        System.out.println(tree.postOrder(root).toString());
-    }
-
+    
 }
 
 
