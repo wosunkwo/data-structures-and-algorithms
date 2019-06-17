@@ -17,3 +17,6 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 - [Day 1: Queue with Stack Implementation](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/queueWithStacks/README.md)
 - [Day 2: First-in, First out Animal Shelter](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/fifoAnimalShelter/README.md)
 - [Day 3: Multi-bracket Validation](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/multibracketvalidation/README.md)
+
+##Week 4 | Trees
+- [Day 1: Binary Tree and BST Implementation](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/tree/README.md)
