@@ -18,7 +18,7 @@ I took a single responsibility apporach
 
 ## Solution
 <!-- Embedded whiteboard image -->
-
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/fizzbuzz_tree.jpg)
 
 ## LINK TO CODE
  
