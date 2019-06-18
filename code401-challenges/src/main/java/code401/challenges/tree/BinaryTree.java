@@ -61,9 +61,9 @@ public class BinaryTree<T> {
             if(node == null){
                 return;
             }else{
-                preOrderHelper(node.getLeft(), resultArr);
+                inOrderHelper(node.getLeft(), resultArr);
                 resultArr.add(node.getValue());
-                preOrderHelper(node.getRight(), resultArr);
+                inOrderHelper(node.getRight(), resultArr);
             }
         }catch(NullPointerException e){
             System.out.println("The root is null");
@@ -77,8 +77,8 @@ public class BinaryTree<T> {
             if(node == null){
                 return;
             }else{
-                preOrderHelper(node.getLeft(), resultArr);
-                preOrderHelper(node.getRight(), resultArr);
+                postOrderHelper(node.getLeft(), resultArr);
+                postOrderHelper(node.getRight(), resultArr);
                 resultArr.add(node.getValue());
             }
         }catch(NullPointerException e){
