@@ -86,7 +86,7 @@ public class BinaryTree<T> {
             System.out.println(e);
         }
     }
-    
+
 }
 
 

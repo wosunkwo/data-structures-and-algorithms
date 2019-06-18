@@ -61,4 +61,22 @@ public class BinarySearchTree {
         }
         return false;
     }
+
+    public static void main (String[] args){
+        BinarySearchTree tree = new BinarySearchTree();
+        Node<Integer> root = new Node<>(1);
+        Node<Integer> treeL = new Node<>(2);
+        Node<Integer> treeR = new Node<>(5);
+
+        root.setRight(treeR);
+        root.setLeft(treeL);
+
+        tree.setRoot(root);
+        tree.add(3);
+        tree.add(5);
+
+        System.out.println(tree.contains(5));
+    }
+
+
 }
