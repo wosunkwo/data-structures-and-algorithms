@@ -22,6 +22,23 @@ public class BinaryTree<T> {
         return root;
     }
 
+    int height(Node root)
+    {
+        if (root == null)
+            return 0;
+        else
+        {
+            /* compute  height of each subtree */
+            int lheight = height(root.left);
+            int rheight = height(root.right);
+
+            /* use the larger one */
+            if (lheight > rheight)
+                return(lheight+1);
+            else return(rheight+1);
+        }
+    }
+
     public ArrayList<T> preOrder(Node<T> node){
         ArrayList<T> resultArr = new ArrayList<>();
         preOrderHelper(node, resultArr);
@@ -86,7 +103,38 @@ public class BinaryTree<T> {
             System.out.println(e);
         }
     }
-    
+
+
+    public String breadthFirst(){
+        int h = height(root);
+        int i;
+        if(root == null){
+            return null;
+        }
+        else{
+            StringBuilder resultStr = new StringBuilder();
+            for (i=1; i<=h; i++)
+                printGivenIndex(root, i, resultStr);
+            return resultStr.toString();
+        }
+    }
+
+
+    void printGivenIndex (Node root ,int currentLevel, StringBuilder resultStr)
+    {
+        if (root == null)
+            return;
+        if (currentLevel == 1){
+            resultStr.append(root.value);
+            resultStr.append(" ");
+        }
+        else if (currentLevel > 1)
+        {
+            printGivenIndex(root.left, currentLevel-1, resultStr);
+            printGivenIndex(root.right, currentLevel-1, resultStr);
+        }
+    }
+
 }
 
 
