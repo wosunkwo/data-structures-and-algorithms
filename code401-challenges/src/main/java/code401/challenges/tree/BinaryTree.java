@@ -2,27 +2,27 @@ package code401.challenges.tree;
 
 import java.util.ArrayList;
 
-public class BinaryTree<T> {
+public class BinaryTree {
 
-    Node<T> root;
+    Node<Integer> root;
 
     public BinaryTree(){
         root = null;
     }
 
-    public BinaryTree(Node<T> head){
+    public BinaryTree(Node<Integer> head){
         root = head;
     }
 
-    public void setRoot(Node<T> root) {
+    public void setRoot(Node<Integer> root) {
         this.root = root;
     }
 
-    public Node<T> getRoot() {
+    public Node<Integer> getRoot() {
         return root;
     }
 
-    int height(Node root)
+    int height(Node<Integer> root)
     {
         if (root == null)
             return 0;
@@ -39,25 +39,25 @@ public class BinaryTree<T> {
         }
     }
 
-    public ArrayList<T> preOrder(Node<T> node){
-        ArrayList<T> resultArr = new ArrayList<>();
+    public ArrayList<Integer> preOrder(Node<Integer> node){
+        ArrayList<Integer> resultArr = new ArrayList<>();
         preOrderHelper(node, resultArr);
         return resultArr;
     }
 
-    public ArrayList<T> inOrder(Node<T> node){
-        ArrayList<T> resultArr = new ArrayList<>();
+    public ArrayList<Integer> inOrder(Node<Integer> node){
+        ArrayList<Integer> resultArr = new ArrayList<>();
         inOrderHelper(node, resultArr);
         return resultArr;
     }
 
-    public ArrayList<T> postOrder(Node<T> node){
-        ArrayList<T> resultArr = new ArrayList<>();
+    public ArrayList<Integer> postOrder(Node<Integer> node){
+        ArrayList<Integer> resultArr = new ArrayList<>();
         postOrderHelper(node, resultArr);
         return resultArr;
     }
 
-    public void preOrderHelper(Node<T> node, ArrayList<T> resultArr){
+    public void preOrderHelper(Node<Integer> node, ArrayList<Integer> resultArr){
         try{
             if(node == null){
                 return;
@@ -73,7 +73,7 @@ public class BinaryTree<T> {
     }
 
 
-    public void inOrderHelper(Node<T> node, ArrayList<T> resultArr){
+    public void inOrderHelper(Node<Integer> node, ArrayList<Integer> resultArr){
         try{
             if(node == null){
                 return;
@@ -89,7 +89,7 @@ public class BinaryTree<T> {
     }
 
 
-    public void postOrderHelper(Node<T> node, ArrayList<T> resultArr){
+    public void postOrderHelper(Node<Integer> node, ArrayList<Integer> resultArr){
         try{
             if(node == null){
                 return;
@@ -135,6 +135,44 @@ public class BinaryTree<T> {
         }
     }
 
+    public Integer find_maximum_value(Node<Integer> root){
+        try{
+            if(root == null)
+                return Integer.MIN_VALUE;
+
+            Integer max = root.value;
+            Integer otherMax = Math.max(find_maximum_value(root.getLeft()), find_maximum_value(root.getRight()));
+            if (otherMax > max)
+                max = otherMax;
+            return max;
+        }catch(NullPointerException e){
+            System.out.println("error");
+            return -1;
+        }
+        }
+
+
+
+
+
+
+        
+//        public static void main(String[] args){
+//
+//            Node<Integer> root = new Node(2);
+//            root.setLeft(new Node(7));
+//            root.setRight(new Node(5));
+//            root.getLeft().setRight(new Node(6));
+//            root.getLeft().getRight().setLeft(new Node(1));
+//            root.getRight().setRight(new Node(11));
+//            root.getRight().setLeft(new Node(4));
+//            root.getRight().getRight().setLeft(new Node(9));
+//
+//
+//            BinaryTree tree = new BinaryTree(root);
+//            System.out.println(tree.find_maximum_value(tree.getRoot()));
+//
+//        }
 }
 
 

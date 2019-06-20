@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class BinaryTreeTest {
-    BinaryTree<Integer> classUnderTest;
+    BinaryTree classUnderTest;
     Node<Integer> root;
     @Before
     public void testInstantiateClass(){
-        classUnderTest = new BinaryTree<>();
+        classUnderTest = new BinaryTree();
         root = new Node<>(1);
         Node<Integer> treeL = new Node<>(2);
         Node<Integer> treeR = new Node<>(5);
@@ -74,7 +74,7 @@ public class BinaryTreeTest {
 
     @Test
     public void BreadthFirstHappy(){
-        BinaryTree<Integer> tree = new BinaryTree<>();
+        BinaryTree tree = new BinaryTree();
         tree.root= new Node(1);
         tree.root.left= new Node(2);
         tree.root.right= new Node(3);
@@ -87,8 +87,8 @@ public class BinaryTreeTest {
     }
 
     @Test
-    public void BreadthEdgeSad(){
-        BinaryTree<Integer> tree = new BinaryTree<>();
+    public void BreadthFirstEdge(){
+        BinaryTree tree = new BinaryTree();
         tree.root= new Node(2);
         tree.root.left= new Node(7);
         tree.root.right= new Node(5);
@@ -106,8 +106,40 @@ public class BinaryTreeTest {
 
     @Test
     public void BreadthFirstSad(){
-        BinaryTree<Integer> tree = new BinaryTree<>();
+        BinaryTree tree = new BinaryTree();
         assertNull("This should return true if the tree is empty are equal ", tree.breadthFirst());
+    }
+
+    @Test
+    public void maxValueHappy(){
+        classUnderTest.setRoot(root);
+        Integer expectedOutput = 5;
+        assertEquals("This should return true if the maximum value in the tree is the same as the expected output ", expectedOutput,  classUnderTest.find_maximum_value(classUnderTest.getRoot()));
+    }
+
+    @Test
+    public void maxValueEdge(){
+        Node<Integer> root = new Node(2);
+        root.setLeft(new Node(7));
+        root.setRight(new Node(5));
+        root.getLeft().setRight(new Node(6));
+        root.getLeft().getRight().setLeft(new Node(1));
+        root.getRight().setRight(new Node(11));
+        root.getRight().setLeft(new Node(4));
+        root.getRight().getRight().setLeft(new Node(9));
+
+        BinaryTree tree = new BinaryTree(root);
+
+        Integer expectedOutput = 11;
+        assertEquals("This should return true if the maximum value in the tree is the same as the expected output ", expectedOutput,  classUnderTest.find_maximum_value(tree.getRoot()));
+    }
+
+    @Test
+    public void maxValueSad(){
+        BinaryTree tree = new BinaryTree();
+
+        Integer expectedOutput = Integer.MIN_VALUE;
+        assertEquals("This should return true if the maximum value in the tree is the same as the expected output ", expectedOutput,  tree.find_maximum_value(tree.getRoot()));
     }
 
 }
