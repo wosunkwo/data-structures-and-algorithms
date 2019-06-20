@@ -49,3 +49,33 @@ Space = 0(1)
 [BreadFirst](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/tree/BinaryTree.java)
 -----------------------------------------------------------------------------------------------------
 [BreadFirstTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/tree/BinaryTreeTest.java)
+
+
+*************************************************************************************************************************
+## CODE CHALLENGE
+Maximum value in a binary tree
+
+# Challenge Summary
+<!-- Short summary or background information -->
+I added a new method to my binary tree called find max value. It goes through the binary tree recursively and finds the largest integer value, then returns it.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Write a function called find-maximum-value which takes binary tree as its only input. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I took a single respinsibility approach
+Time - 0(n) where n is the height of the tree
+Space - 0(1)
+
+## Solution
+<!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/find_maximum_binary_tree.jpg)
+
+## LINK TO CODE
+ 
+[MaxValue](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/tree/BinaryTree.java)
+-----------------------------------------------------------------------------------------------------
+[MaxValueTest](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/tree/BinaryTreeTest.java)
+
