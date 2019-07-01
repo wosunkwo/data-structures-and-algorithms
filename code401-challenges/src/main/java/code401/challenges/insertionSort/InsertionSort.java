@@ -17,10 +17,4 @@ public class InsertionSort {
         }
         return arr;
     }
-
-    public static void main(String[] args){
-        InsertionSort test = new InsertionSort();
-        int[] happyArr = new int[] {7,2,4,1,3,9};
-        System.out.println(Arrays.toString(test.InsertionSort(happyArr)));
-    }
 }
