@@ -23,3 +23,6 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 - [Day 1: Fizz Buzz](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/FizzBuzzTree/README.md)
 - [Day 2: Breadth First Search](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/tree/README.md)
 - [DAY 3: Max Value in Tree](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/tree/README.md)
+
+## Week 6 | Sort
+- [Day 1: Insertion Sort](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/insertionSort/README.md)
