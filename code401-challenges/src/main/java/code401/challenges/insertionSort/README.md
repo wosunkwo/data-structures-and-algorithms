@@ -14,6 +14,9 @@ I used an iterative apporach and looped through the array
 Big(0) Time = 0(n2) where n is the size of the array
 Big(0) Space = 0(1)
 
+## Lecture File
+[Lecture-Notes.md](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/insertionSort/LECTURE-NOTES.md)
+
 ## Solution
 <!-- Embedded whiteboard image -->
 ![alt_text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/insertion_sort.jpg)
