@@ -26,3 +26,4 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 
 ## Week 6 | Sort
 - [Day 1: Insertion Sort](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/insertionSort/README.md)
+- [Day 2: Merge Sort](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/mergeSort/README.md)
