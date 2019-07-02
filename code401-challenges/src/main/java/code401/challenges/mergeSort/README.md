@@ -17,6 +17,8 @@ The big O for Time for this approach is O(nlog(n)).
 Space is O(1).
 
 
+## [Lecture-Notes.md](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/mergeSort/LECTURE-NOTES.md)
+
 ## Solution
 <!-- Embedded whiteboard image -->
 
