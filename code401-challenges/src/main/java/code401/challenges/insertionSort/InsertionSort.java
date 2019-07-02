@@ -1,7 +1,5 @@
 package code401.challenges.insertionSort;
 
-import java.util.Arrays;
-
 public class InsertionSort {
     public int[] InsertionSort(int[] arr){
         int j;
