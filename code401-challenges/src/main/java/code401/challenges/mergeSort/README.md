@@ -13,7 +13,7 @@ Research and prepare a lecture on the Merge Sort Algorithm suitable for delivery
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 I took an efficient approach
-The big O for Time for this approach is O(n^log(n)).
+The big O for Time for this approach is O(nlog(n)).
 Space is O(1).
 
 
