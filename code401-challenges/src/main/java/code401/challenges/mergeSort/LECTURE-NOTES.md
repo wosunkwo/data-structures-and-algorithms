@@ -1,4 +1,4 @@
-# Lecture Notes: Insertion Sort
+# Lecture Notes: Merge Sort
 The merge sort algorithm is a divide and conquers algorithm. In the divide and conquer paradigm, a problem is 
 broken into smaller problems where each small problem still retains all the properties of the larger problem -- 
 except its size. To solve the original problem, each piece is solved individually; then the pieces are merged back together.
