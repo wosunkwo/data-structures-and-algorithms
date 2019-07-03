@@ -17,6 +17,8 @@ BIG 0
 Time = O(nlog(n))
 Space = O(log(n))
 
+## [Lecture-Notes.md](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/quickSort/LECTURE-NOTES.md)
+
 ## Solution
 <!-- Embedded whiteboard image -->
 
