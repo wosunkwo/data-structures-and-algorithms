@@ -28,3 +28,6 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 - [Day 1: Insertion Sort](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/insertionSort/README.md)
 - [Day 2: Merge Sort](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/mergeSort/README.md)
 - [Day 3: Quick Sort](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/quickSort/README.md)
+
+## Week 7 | Hash
+- [Day 2: Repeated Word](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/RepeatedWord/README.md)
