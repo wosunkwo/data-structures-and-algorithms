@@ -21,6 +21,7 @@ Space - 0(n) where n is the number of words in the sentence
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/repeatedWord.jpg)
 
 ## [RepeatedWord.java:](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/RepeatedWord/RepeatedWord.java)
 
