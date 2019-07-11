@@ -15,7 +15,7 @@ Implement a function to find the common values in 2 binary trees.
 > tree_intersection : Which accepts the two binary search tree
 
 ## Solution
-> ![Solution]()
+![alt_text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/tree_intersection.jpg)
 
 
 
