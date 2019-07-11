@@ -20,6 +20,6 @@ Implement a function to find the common values in 2 binary trees.
 
 
 ## Codes
-> [Code Source](https://github.com/skadariya/data-structures-and-algorithms/blob/master/code-challenges/401/src/main/java/codeChallenge/tree_intersection/TreeIntersection.java)
+> [Code Source](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/treeIntersection/TreeIntersection.java)
 
-> [Test Code](https://github.com/skadariya/data-structures-and-algorithms/blob/master/code-challenges/401/src/test/java/codeChallenge/tree_intersection/TreeIntersectionTest.java)
+> [Test Code](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/treeIntersection/TreeIntersectionTest.java)
