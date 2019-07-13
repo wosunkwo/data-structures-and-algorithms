@@ -32,4 +32,4 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 ## Week 7 | Hash
 - [Day 2: Repeated Word](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/RepeatedWord/README.md)
 - [Day 3: Tree Intersection](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/treeIntersection/README.md)
--[Day 5: Left Join](https://github.com/wosunkwo/data-structures-and-algorithms/tree/master/code401-challenges/src/main/java/code401/challenges/LeftJoin)
+- [Day 5: Left Join](https://github.com/wosunkwo/data-structures-and-algorithms/tree/master/code401-challenges/src/main/java/code401/challenges/LeftJoin)
