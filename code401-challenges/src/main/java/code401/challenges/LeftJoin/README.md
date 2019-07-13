@@ -29,3 +29,6 @@ Space - 0(n) where n is the size of the first hashmap
 <!-- Embedded whiteboard image -->
 
 
+## CODE
+> [LeftJoin.java](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/LeftJoin/LeftJoin.java)
+> [LeftJoinTest.java](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/LeftJoin/LeftJoinTest.java)
