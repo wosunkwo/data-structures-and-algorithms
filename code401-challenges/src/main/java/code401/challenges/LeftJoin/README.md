@@ -34,7 +34,7 @@ Space - 0(n) where n is the size of the first hashmap
 
 ## Solution
 <!-- Embedded whiteboard image -->
-
+![alt_text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/leftJoin.jpg)
 
 ## CODE
 > [LeftJoin.java](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/LeftJoin/LeftJoin.java)
