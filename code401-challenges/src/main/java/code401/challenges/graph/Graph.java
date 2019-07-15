@@ -35,13 +35,8 @@ public class Graph {
     }
 
     //method to return all of the nodes in our map. It returns them in form of an arrayList
-    public ArrayList<Node> getNodes(){
-        ArrayList<Node> allNodes = new ArrayList<>();
-        Iterator<Node> it = this.nodes.iterator();
-        while(it.hasNext()){
-            allNodes.add(it.next());
-        }
-        return allNodes;
+    public HashSet<Node> getNodes(){
+        return this.nodes;
     }
 
     //method to return all the neighbours of a node in our map, and the weight of all the connected edges
@@ -97,7 +92,7 @@ public class Graph {
         graph.addEdge(temp2, temp3,30);
         graph.addEdge(temp2, temp4,40);
 
-        for(Map.Entry<Node, Integer> entry: graph.getNeighbors(temp4).entrySet()){
+        for(Map.Entry<Node, Integer> entry: graph.getNeighbors(temp2).entrySet()){
             System.out.println(entry.getValue());
         }
     }
