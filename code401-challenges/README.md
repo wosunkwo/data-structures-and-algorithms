@@ -33,3 +33,6 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 - [Day 2: Repeated Word](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/RepeatedWord/README.md)
 - [Day 3: Tree Intersection](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/treeIntersection/README.md)
 - [Day 5: Left Join](https://github.com/wosunkwo/data-structures-and-algorithms/tree/master/code401-challenges/src/main/java/code401/challenges/LeftJoin)
+
+## Week 8 | Graph
+- [Day 1: Graph](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/graph/README.md)
