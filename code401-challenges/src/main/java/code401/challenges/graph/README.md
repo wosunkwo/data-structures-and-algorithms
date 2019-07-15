@@ -73,4 +73,6 @@ This takes in a node object and as long as it already exists in the graph, it wi
 nodes that share an edge with the passed in node as well as the weight of the edges in form of a hashmap
 *********************************************************************************************************************
 
-## size() - this returns the size of the graph (the number of nodes in the graph)
+## size():
+This returns the size of the graph (the number of nodes in the graph)
+*********************************************************************************************************************
