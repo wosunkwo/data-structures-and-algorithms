@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 
 import static org.junit.Assert.*;
@@ -96,6 +97,52 @@ public class GraphTest {
     public void emptyGraphReturnsNull(){
         Graph emptyGraph = new Graph();
         assertNull("This should return null if the graph is empty", emptyGraph.getNeighbors(testNode1));
+    }
+
+    @Test
+    public void happyPathForBreadthFirst(){
+        Integer[] expectedOutput = new Integer[4];
+        expectedOutput[0] = 4;
+        expectedOutput[1] = 2;
+        expectedOutput[2] = 1;
+        expectedOutput[3] = 3;
+
+        Integer[] retrievedOutput = new Integer[4];
+        int cnt = 0;
+
+        Iterator<Node> it = graph.breadFirst(testNode4).iterator();
+        while(it.hasNext()){
+            retrievedOutput[cnt] = it.next().getValue();
+            cnt++;
+        }
+        assertArrayEquals("This should return true if the breadth first serach returns all the nodes in the graph in the righ torder", expectedOutput, retrievedOutput);
+    }
+
+    @Test
+    public void failPathForBreadthFirst(){
+        Node testNode5 = new Node();
+        testNode5.setValue(5);
+       assertNull("This should return true if the breadthFirst method successfully returns null for a node that doesn't exit in the graph", graph.breadFirst(testNode5));
+    }
+
+    @Test
+    public void edgePathForBreadthFirst(){
+        Graph testGraph = new Graph();
+        Node testNode5 = new Node();
+        testNode5.setValue(5);
+        testGraph.addNode(testNode5);
+
+        Integer[] expectedOutput = new Integer[1];
+        expectedOutput[0] = 5;
+
+        Integer[] retrievedOutput = new Integer[1];
+
+        Iterator<Node> it = testGraph.breadFirst(testNode5).iterator();
+        while(it.hasNext()){
+            retrievedOutput[0] = it.next().getValue();
+        }
+
+        assertArrayEquals("This should return true if the method successfully counts 1 node without any edges", expectedOutput, retrievedOutput);
     }
 
 }
