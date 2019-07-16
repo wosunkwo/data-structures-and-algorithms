@@ -76,3 +76,29 @@ nodes that share an edge with the passed in node as well as the weight of the ed
 ## size():
 This returns the size of the graph (the number of nodes in the graph)
 *********************************************************************************************************************
+
+## CODE CHALLENGE
+
+# Challenge Summary
+<!-- Short summary or background information -->
+I added a new method to my graph class called breadthFirst(). This method goes through my graph and adds every node in my graph to an arrayList using the breadth first logic.
+
+
+## Challenge Description
+<!-- Description of the challenge -->
+Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+I Utilized the Single-responsibility principle: any methods I wrote waas clean, reusable, and an abstract component
+part to the whole challenge.
+
+BreadFirst()
+
+Time Complexity: Big 0(n * m) where n is the number of nodes in the graph, and m is the number of edges each node has
+Space Complexity: Big 0(n) where n is the number of nodes in the graph
+
+
+
+## Solution
+<!-- Embedded whiteboard image -->
