@@ -102,3 +102,8 @@ Space Complexity: Big 0(n) where n is the number of nodes in the graph
 
 ## Solution
 <!-- Embedded whiteboard image -->
+![alt_text](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/assets/breadthFirst.jpg)
+
+[Graph.java](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/graph/Graph.java)
+
+[GraphTest.java](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/test/java/code401/challenges/graph/GraphTest.java)
