@@ -67,6 +67,42 @@ public class Graph {
         return this.nodes.size();
     }
 
+    // Method to perform a bread-first transversal on the graph
+    public List<Node> breadFirst(Node startingNode){
+        if(nodes.contains(startingNode)){
+            HashSet<Node> alreadyVisited = new HashSet<>();
+            Queue<Node> toBeVisited = new LinkedList<>();
+            List<Node> resultList = new ArrayList<>();
+
+            toBeVisited.add(startingNode);
+            Node currentNode;
+
+            while(!toBeVisited.isEmpty()){
+                currentNode = toBeVisited.remove();
+                if(!resultList.contains(currentNode)){
+                    resultList.add(currentNode);
+                }
+                alreadyVisited.add(currentNode);
+
+                for(Edge neighbourEdge: currentNode.getEdges()){
+                    if(!alreadyVisited.contains(neighbourEdge.getLeftNode())){
+                        if(neighbourEdge.getLeftNode() != currentNode){
+                            toBeVisited.add(neighbourEdge.getLeftNode());
+                        }
+                    } if(!alreadyVisited.contains(neighbourEdge.getRightNode())){
+                        if(neighbourEdge.getRightNode() != currentNode){
+                            toBeVisited.add(neighbourEdge.getRightNode());
+                        }
+                    }
+                }
+            }
+            return resultList;
+        }else{
+            return null;
+        }
+
+    }
+
     public static void main(String[] args){
         Graph graph = new Graph();
 
@@ -92,8 +128,9 @@ public class Graph {
         graph.addEdge(temp2, temp3,30);
         graph.addEdge(temp2, temp4,40);
 
-        for(Map.Entry<Node, Integer> entry: graph.getNeighbors(temp2).entrySet()){
-            System.out.println(entry.getValue());
+        Iterator<Node> it = graph.breadFirst(temp1).iterator();
+        while(it.hasNext()){
+            System.out.println(it.next().getValue());
         }
     }
 }
