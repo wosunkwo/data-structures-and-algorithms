@@ -22,7 +22,7 @@ public class Graph {
     ///function to add an edge in-between two nodes, returns true if the edge was successfully added,
     // returns false if it wasn't
     public boolean addEdge(Node leftNode, Node rightNode, int weight){
-        if(this.nodes.contains(leftNode) == true && this.nodes.contains(rightNode) == true){
+        if(this.nodes.contains(leftNode) && this.nodes.contains(rightNode)){
             Edge newEdge = new Edge();
             newEdge.setWeight(weight);
             newEdge.setLeftNode(leftNode);
@@ -76,22 +76,23 @@ public class Graph {
 
             toBeVisited.add(startingNode);
             Node currentNode;
+            alreadyVisited.add(startingNode);
 
             while(!toBeVisited.isEmpty()){
                 currentNode = toBeVisited.remove();
-                if(!resultList.contains(currentNode)){
-                    resultList.add(currentNode);
-                }
-                alreadyVisited.add(currentNode);
+                resultList.add(currentNode);
 
                 for(Edge neighbourEdge: currentNode.getEdges()){
                     if(!alreadyVisited.contains(neighbourEdge.getLeftNode())){
                         if(neighbourEdge.getLeftNode() != currentNode){
                             toBeVisited.add(neighbourEdge.getLeftNode());
+                            alreadyVisited.add(neighbourEdge.getLeftNode());
                         }
-                    } if(!alreadyVisited.contains(neighbourEdge.getRightNode())){
+                    }
+                    if(!alreadyVisited.contains(neighbourEdge.getRightNode())){
                         if(neighbourEdge.getRightNode() != currentNode){
                             toBeVisited.add(neighbourEdge.getRightNode());
+                            alreadyVisited.add(neighbourEdge.getRightNode());
                         }
                     }
                 }
@@ -128,7 +129,7 @@ public class Graph {
         graph.addEdge(temp2, temp3,30);
         graph.addEdge(temp2, temp4,40);
 
-        Iterator<Node> it = graph.breadFirst(temp1).iterator();
+        Iterator<Node> it = graph.breadFirst(temp4).iterator();
         while(it.hasNext()){
             System.out.println(it.next().getValue());
         }
