@@ -5,7 +5,7 @@ import java.util.*;
 public class Graph {
     HashSet<Node> nodes;
 
-    Graph(){
+    public Graph(){
         this.nodes = new HashSet<>();
     }
 
@@ -25,6 +25,20 @@ public class Graph {
         if(this.nodes.contains(leftNode) && this.nodes.contains(rightNode)){
             Edge newEdge = new Edge();
             newEdge.setWeight(weight);
+            newEdge.setLeftNode(leftNode);
+            newEdge.setRightNode(rightNode);
+            leftNode.getEdges().add(newEdge);
+            rightNode.getEdges().add(newEdge);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean addEdge(Node leftNode, Node rightNode, int weight, int price){
+        if(this.nodes.contains(leftNode) && this.nodes.contains(rightNode)){
+            Edge newEdge = new Edge();
+            newEdge.setWeight(weight);
+            newEdge.setPrice(price);
             newEdge.setLeftNode(leftNode);
             newEdge.setRightNode(rightNode);
             leftNode.getEdges().add(newEdge);

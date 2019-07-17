@@ -2,11 +2,13 @@ package code401.challenges.graph;
 
 public class Edge {
     private Integer weight;
+    private Integer price;
     private Node leftNode;
     private Node rightNode;
 
-    Edge(){
+    public Edge(){
         this.weight = null;
+        this.price = null;
         this.leftNode = new Node();
         this.rightNode = new Node();
     }
@@ -17,6 +19,14 @@ public class Edge {
 
     public void setWeight(Integer weight) {
         this.weight = weight;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
     }
 
     public Node getLeftNode() {
