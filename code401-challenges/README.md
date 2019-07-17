@@ -37,3 +37,4 @@ This repo contains my practice and adventures in Data Structures and Algorithms 
 ## Week 8 | Graph
 - [Day 1: Graph](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/graph/README.md)
 - [Day 2: BreadthFirst for Graph](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/graph/README.md)
+- [Day 3: Find Edges for Graph](https://github.com/wosunkwo/data-structures-and-algorithms/blob/master/code401-challenges/src/main/java/code401/challenges/GetEdge/README.md)
