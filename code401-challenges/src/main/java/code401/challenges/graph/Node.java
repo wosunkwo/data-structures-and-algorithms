@@ -4,9 +4,20 @@ import java.util.HashSet;
 
 public class Node {
     private Integer value;
+    private String city;
     HashSet<Edge> edges;
-    Node(){
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public Node(){
         this.value = null;
+        this.city = null;
         this.edges = new HashSet<>();
     }
     public Integer getValue() {
